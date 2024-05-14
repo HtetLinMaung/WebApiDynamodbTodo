@@ -1,0 +1,6 @@
+@WebApiDynamodbTodo_HostAddress = http://localhost:5143
+
+GET {{WebApiDynamodbTodo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

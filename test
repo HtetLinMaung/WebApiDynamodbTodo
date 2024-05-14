@@ -1,0 +1,13 @@
+curl -X POST http://localhost:5143/api/todo -H "Content-Type: application/json" -d '{"name":"Test Todo","isComplete":false}'
+
+curl -X GET "http://localhost:5143/api/todo"
+
+curl -X GET "http://localhost:5143/api/todo?searchTerm=3"
+
+curl -X GET "http://localhost:5143/api/todo?pageSize=1"
+
+curl -X GET http://localhost:5143/api/todo/185a161a-6773-431b-a1b1-f504baa60a0b
+
+curl -X PUT http://localhost:5143/api/todo/185a161a-6773-431b-a1b1-f504baa60a0b -H "Content-Type: application/json" -d '{"name":"Updated Todo","isComplete":true}'
+
+curl -X DELETE http://localhost:5143/api/todo/185a161a-6773-431b-a1b1-f504baa60a0b
